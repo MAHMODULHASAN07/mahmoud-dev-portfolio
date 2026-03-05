@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmodul Hasan | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="shortcut icon" href="images/portpofolio_logo.webp" type="image/x-icon">
+</head>
+
+<body class="font-open-sans">
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>mahmoud.<span class="color-orange">dev</span></h2>
+            </div>
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><button class="btn" id="nav-contact-btn">Let's Talk</button></li>
+            </ul>
+        </nav>
+
+        <section id="banner">
+            <div class="banner-content">
+                <h2>Hi, I am</h2>
+                <h1>Mahmodul Hasan</h1>
+                <p>Full Stack Developer with expertise in modern web technologies and mobile engineering. I craft
+                    scalable, user-centric applications by blending clean architecture with intuitive design.</p>
+                <div class="banner-actions">
+                    <button class="btn"><i class="fa-solid fa-download"></i> Download Resume</button>
+                    <button class="btn" id="contact-btn"><i class="fa-solid fa-phone"></i> Contact</button>
+                </div>
+            </div>
+            <div class="banner-image">
+                <img src="images/profilepic.jpeg" alt="Mahmodul Hasan">
+            </div>
+        </section>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="section-heading section-heading-left">
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a dedicated full-stack developer with a passion for creating elegant solutions to complex
+                        problems. With expertise spanning frontend, backend, mobile, and machine learning, I bring a
+                        holistic approach to software development.</p>
+                    <p>My journey in technology is driven by curiosity and a commitment to continuous learning. I
+                        believe in writing clean, maintainable code and creating applications that make a real
+                        difference in people's lives.</p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <h4>Clean Code</h4>
+                            <p>Writing maintainable and scalable solutions</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Problem Solver</h4>
+                            <p>Tackling challenges with creative thinking</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">14+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Achievements</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">250+</div>
+                        <div class="stat-label">Problem solved</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="tech-ecosystem">
+        <div class="skills-container">
+            <div class="section-heading section-heading-left">
+                <h2>Tech Ecosystem</h2>
+                <p>A snapshot of the technologies I actively use across frontend, backend, database, mobile and machine
+                    learning.</p>
+            </div>
+
+            <div class="tech-filters" id="tech-filters">
+                <button class="pill active" data-filter="all">All</button>
+                <button class="pill" data-filter="frontend">Frontend</button>
+                <button class="pill" data-filter="backend">Backend</button>
+                <button class="pill" data-filter="database">Database</button>
+                <button class="pill" data-filter="mobile">Mobile</button>
+                <button class="pill" data-filter="ml">ML</button>
+            </div>
+
+            <div class="skill-box tech-grid">
+                <!-- Frontend Development -->
+                <article class="skill-card tech-card" data-category="frontend">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+                        class="tech-icon">
+                    <h3>HTML</h3>
+                    <p>Semantic markup for building accessible and well-structured web pages.</p>
+                    <span class="tech-tag">Frontend Language</span>
+                </article>
+
+                <article class="skill-card tech-card" data-category="frontend">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                        class="tech-icon">
+                    <h3>CSS</h3>
+                    <p>Modern styling with flexbox, grid, animations and responsive design.</p>
+                    <span class="tech-tag">Frontend Styling</span>
+                </article>
+
+                <article class="skill-card tech-card" data-category="frontend">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript" class="tech-icon">
+                    <h3>JavaScript</h3>
+                    <p>Dynamic language for interactive web experiences and modern frameworks.</p>
+                    <span class="tech-tag">Frontend Language</span>
+                </article>
+
+                <article class="skill-card tech-card" data-category="frontend">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="Modern UI/UX" class="tech-icon">
+                    <h3>Modern UI/UX</h3>
+                    <p>Component-driven design with React for intuitive user experiences.</p>
+                    <span class="tech-tag">Frontend Design</span>
+                </article>
+
+                <!-- Backend Development -->
+                <article class="skill-card tech-card" data-category="backend">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js" class="tech-icon">
+                    <h3>Node.js</h3>
+                    <p>Event-driven runtime for building scalable APIs and backend services.</p>
+                    <span class="tech-tag">Backend Runtime</span>
+                </article>
+
+                <article class="skill-card tech-card" data-category="backend">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                        alt="Express" class="tech-icon">
+                    <h3>Express.js</h3>
+                    <p>Minimal and flexible Node.js web application framework for APIs.</p>
+                    <span class="tech-tag">Backend Framework</span>
+                </article>
+
+                <article class="skill-card tech-card" data-category="backend">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"
+                        class="tech-icon">
+                    <h3>Java</h3>
+                    <p>Enterprise-grade language for building robust and scalable applications.</p>
+                    <span class="tech-tag">Backend Language</span>
+                </article>
+
+                <article class="skill-card tech-card" data-category="backend">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                        alt="Spring" class="tech-icon">
+                    <h3>Spring Boot</h3>
+                    <p>Powerful Java framework for building production-ready enterprise applications.</p>
+                    <span class="tech-tag">Backend Framework</span>
+                </article>
+
+                <!-- Database -->
+                <article class="skill-card tech-card" data-category="database">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                        alt="MongoDB" class="tech-icon">
+                    <h3>MongoDB</h3>
+                    <p>NoSQL database for flexible, document-oriented data storage.</p>
+                    <span class="tech-tag">NoSQL Database</span>
+                </article>
+
+                <article class="skill-card tech-card" data-category="database">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                        alt="PostgreSQL" class="tech-icon">
+                    <h3>PostgreSQL</h3>
+                    <p>Powerful relational database with advanced features and reliability.</p>
+                    <span class="tech-tag">SQL Database</span>
+                </article>
+
+                <!-- Machine Learning -->
+                <article class="skill-card tech-card" data-category="ml">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python" class="tech-icon">
+                    <h3>Python</h3>
+                    <p>Versatile language powering data science and machine learning workflows.</p>
+                    <span class="tech-tag">ML Language</span>
+                </article>
+
+                <article class="skill-card tech-card" data-category="ml">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                        alt="TensorFlow" class="tech-icon">
+                    <h3>TensorFlow</h3>
+                    <p>End-to-end platform for building and deploying machine learning models.</p>
+                    <span class="tech-tag">ML Framework</span>
+                </article>
+
+                <!-- Mobile Development -->
+                <article class="skill-card tech-card" data-category="mobile">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                        alt="Flutter" class="tech-icon">
+                    <h3>Flutter</h3>
+                    <p>Cross-platform mobile framework for building iOS and Android apps.</p>
+                    <span class="tech-tag">Mobile Framework</span>
+                </article>
+
+                <article class="skill-card tech-card" data-category="mobile">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart"
+                        class="tech-icon">
+                    <h3>Dart</h3>
+                    <p>Modern programming language powering Flutter mobile development.</p>
+                    <span class="tech-tag">Mobile Language</span>
+                </article>
+            </div>
+
+            <div class="tech-show-more">
+                <button class="btn" type="button">Show More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projects-container">
+            <div class="section-heading section-heading-left">
+                <h2> Projects</h2>
+                <p>Selected work that reflects how I design, build and ship software from idea to deployment.</p>
+            </div>
+
+            <div class="project-grid">
+
+
+                <article class="project-card">
+                    <h3>Personal Portfolio Platform</h3>
+                    <p class="project-meta">Frontend Experience · 2026</p>
+                    <p class="project-text">Responsive portfolio with a tech ecosystem, projects, achievements and
+                        contact flow.</p>
+                    <div class="project-tech-stack">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML5" title="HTML5">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                            title="CSS3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript" title="JavaScript">
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Water Sort Puzzle Game</h3>
+                    <p class="project-meta">Desktop Game · 2025</p>
+                    <p class="project-text">Interactive puzzle game with graphical interface for sorting colored water
+                        between bottles.</p>
+                    <div class="project-tech-stack">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"
+                            title="Java">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                            alt="Java GUI" title="Java Swing/AWT">
+                    </div>
+                </article>
+                <article class="project-card">
+                    <h3>Smart Academic Performance Tracker</h3>
+                    <p class="project-meta">Full‑stack Web App · 2025</p>
+                    <p class="project-text">Dashboard to monitor student progress with analytics, trends and alerts for
+                        under‑performance.</p>
+                    <div class="project-tech-stack">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                            alt="React" title="React">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                            alt="Node.js" title="Node.js">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                            alt="MongoDB" title="MongoDB">
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="achievements-container">
+            <div class="section-heading section-heading-left">
+                <h2>Achievements</h2>
+                <p>Highlights that capture my growth, responsibility and recognition as an aspiring software engineer.
+                </p>
+            </div>
+
+            <div class="achievement-grid">
+                <article class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>ICPC Chattogram Regional Contest</h3>
+                    <p class="achievement-meta">International Collegiate Programming Contest</p>
+                    <p class="achievement-text">Participated in the prestigious ICPC regional contest, competing with
+                        top university teams to solve complex algorithmic challenges.</p>
+                </article>
+
+                <article class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>NSTU Science Fest Programming Contest</h3>
+                    <p class="achievement-meta">University Programming Competition</p>
+                    <p class="achievement-text">Competed in NSTU Science Fest programming contest, demonstrating
+                        problem-solving skills and algorithmic thinking.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="resume-container">
+            <div class="section-heading section-heading-left">
+                <h2>Education & Experience</h2>
+                <p>Building skills through formal education and hands-on project experience in modern software
+                    engineering.</p>
+            </div>
+            <div class="resume-grid">
+                <article class="resume-item">
+                    <div class="resume-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>B.Sc. in Software Engineering</h3>
+                    <p class="resume-meta">Institute of Information Technology, NSTU · Ongoing</p>
+                    <p class="resume-text">Comprehensive curriculum covering software development, algorithms, data
+                        structures, system design, and modern engineering principles at Noakhali Science and Technology
+                        University.</p>
+                </article>
+                <article class="resume-item">
+                    <div class="resume-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Executive Member - EHSAN Organization</h3>
+                    <p class="resume-meta">Leadership & Social Responsibility</p>
+                    <p class="resume-text">Serving as an executive member, contributing to organizational management,
+                        community initiatives, and collaborative projects.</p>
+                </article>
+                <article class="resume-item">
+                    <div class="resume-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Member - IT Club</h3>
+                    <p class="resume-meta">Technical Community Engagement</p>
+                    <p class="resume-text">Active participation in technical discussions, workshops, and collaborative
+                        learning initiatives within the university's IT community.</p>
+                </article>
+                <article class="resume-item">
+                    <div class="resume-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Full Stack Development</h3>
+                    <p class="resume-meta">Practical Experience</p>
+                    <p class="resume-text">Designed and deployed web applications using React, Node.js, and relational
+                        databases in production environments.</p>
+                </article>
+                <article class="resume-item">
+                    <div class="resume-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p class="resume-meta">Flutter & Cross-Platform</p>
+                    <p class="resume-text">Developed cross-platform mobile applications using Flutter, focusing on user
+                        experience and performance optimization.</p>
+                </article>
+                <article class="resume-item">
+                    <div class="resume-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Security & Cryptography</h3>
+                    <p class="resume-meta">Academic Research</p>
+                    <p class="resume-text">Explored data protection techniques including steganography and encryption
+                        algorithms with real-world applications.</p>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <section class="footer-container">
+            <div class="social">
+                <h2>Let's Connect</h2>
+                <p>I'm always open to discussing new opportunities, collaborations, or software engineering projects.
+                    Feel free to reach out through any of the channels below.</p>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:hasan56988733@gmail.com">hasan56988733@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Noakhali, Bangladesh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h3>Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mahmodul-hasan-35406132b/" target="_blank" rel="noopener" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/MAHMODULHASAN07" target="_blank" rel="noopener" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.facebook.com/mahmodul.hasan.106273" target="_blank" rel="noopener" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <form class="form" id="contact-form">
+                <h2>Send a Message</h2>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input class="btn" type="submit" value="Send Message">
+            </form>
+        </section>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mahmodul Hasan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
