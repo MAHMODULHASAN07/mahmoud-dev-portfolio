@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const nameInput = contactForm.querySelector('input[name="name"]');
             const emailInput = contactForm.querySelector('input[name="email"]');
             const messageInput = contactForm.querySelector('textarea[name="message"]');
+            const defaultButtonMarkup = submitButton ? submitButton.innerHTML : 'Send Message';
 
             if (!window.emailjs) {
                 alert('Email service is not loaded. Please refresh and try again.');
@@ -44,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             try {
                 if (submitButton) {
                     submitButton.disabled = true;
-                    submitButton.textContent = 'Sending...';
+                    submitButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i><span>Sending...</span>';
                 }
 
                 await emailjs.send(emailServiceId, emailTemplateId, templateParams);
@@ -56,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } finally {
                 if (submitButton) {
                     submitButton.disabled = false;
-                    submitButton.textContent = 'Send';
+                    submitButton.innerHTML = defaultButtonMarkup;
                 }
             }
         });
