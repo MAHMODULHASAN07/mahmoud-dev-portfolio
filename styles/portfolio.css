@@ -69,6 +69,17 @@ ul {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
 }
 
+.btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    box-shadow: none;
+}
+
+.btn-secondary:hover {
+    background: #fff1e6;
+}
+
 .text-center {
     text-align: center;
 }
@@ -162,14 +173,14 @@ nav {
 }
 
 .banner-content h2 {
-    font-size: 24px;
-    color: #4b5563;
+    font-size: 28px;
+    color: #1f2937;
 }
 
 .banner-content h1 {
-    font-size: 40px;
+    font-size: 42px;
     margin: 8px 0 16px 0;
-    color: #1f2937;
+    color: #111827;
 }
 
 .banner-content p {
@@ -489,6 +500,73 @@ nav {
     text-align: center;
 }
 
+.skills-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grouped-tech-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.skills-group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.skills-group-title {
+    font-size: 24px;
+    color: #1f2937;
+}
+
+.skills-tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.skill-category-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.skill-category-card h3 {
+    color: #1f2937;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.category-skill-list {
+    list-style: none;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.category-skill-list li {
+    color: #4b5563;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 8px 10px;
+}
+
+.skill-item-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
 /* Projects Section */
 #projects {
     background: #ffffff;
@@ -537,6 +615,18 @@ nav {
     color: #4b5563;
     line-height: 1.6;
     margin-bottom: 14px;
+}
+
+.project-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.project-actions .btn {
+    padding: 10px 18px;
+    font-size: 14px;
 }
 
 .project-tags {
@@ -928,6 +1018,7 @@ footer {
     }
 
     .tech-grid,
+    .skills-categories,
     .project-grid,
     .achievement-grid,
     .resume-grid {

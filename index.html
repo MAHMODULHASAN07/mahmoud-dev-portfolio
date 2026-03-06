@@ -32,13 +32,12 @@
 
         <section id="banner">
             <div class="banner-content">
-                <h2>Hi, I am</h2>
-                <h1>Mahmodul Hasan</h1>
-                <p>Full Stack Developer with expertise in modern web technologies and mobile engineering. I craft
-                    scalable, user-centric applications by blending clean architecture with intuitive design.</p>
+                <h2>Mahmodul Hasan</h2>
+                <h1>Full Stack Developer | Flutter App Developer</h1>
+                <p>Building modern web applications and scalable backend systems.</p>
                 <div class="banner-actions">
-                    <button class="btn"><i class="fa-solid fa-download"></i> Download Resume</button>
-                    <button class="btn" id="contact-btn"><i class="fa-solid fa-phone"></i> Contact</button>
+                    <a class="btn" href="#projects">View Projects</a>
+                    <a class="btn btn-secondary" href="#resume"><i class="fa-solid fa-download"></i> Download Resume</a>
                 </div>
             </div>
             <div class="banner-image">
@@ -102,9 +101,8 @@
     <section id="skills" class="tech-ecosystem">
         <div class="skills-container">
             <div class="section-heading section-heading-left">
-                <h2>Tech Ecosystem</h2>
-                <p>A snapshot of the technologies I actively use across frontend, backend, database, mobile and machine
-                    learning.</p>
+                <h2>Skills</h2>
+                <p>Technologies organized by category for a clear and focused overview.</p>
             </div>
 
             <div class="tech-filters" id="tech-filters">
@@ -113,13 +111,14 @@
                 <button class="pill" data-filter="backend">Backend</button>
                 <button class="pill" data-filter="database">Database</button>
                 <button class="pill" data-filter="mobile">Mobile</button>
-                <button class="pill" data-filter="ml">ML</button>
+                <button class="pill" data-filter="cp">CP</button>
+                <button class="pill" data-filter="tools">Tools</button>
+
             </div>
 
             <div class="skill-box tech-grid">
-                <!-- Frontend Development -->
                 <article class="skill-card tech-card" data-category="frontend">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
                         class="tech-icon">
                     <h3>HTML</h3>
                     <p>Semantic markup for building accessible and well-structured web pages.</p>
@@ -127,7 +126,7 @@
                 </article>
 
                 <article class="skill-card tech-card" data-category="frontend">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
                         class="tech-icon">
                     <h3>CSS</h3>
                     <p>Modern styling with flexbox, grid, animations and responsive design.</p>
@@ -142,15 +141,6 @@
                     <span class="tech-tag">Frontend Language</span>
                 </article>
 
-                <article class="skill-card tech-card" data-category="frontend">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                        alt="Modern UI/UX" class="tech-icon">
-                    <h3>Modern UI/UX</h3>
-                    <p>Component-driven design with React for intuitive user experiences.</p>
-                    <span class="tech-tag">Frontend Design</span>
-                </article>
-
-                <!-- Backend Development -->
                 <article class="skill-card tech-card" data-category="backend">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
                         alt="Node.js" class="tech-icon">
@@ -162,7 +152,7 @@
                 <article class="skill-card tech-card" data-category="backend">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
                         alt="Express" class="tech-icon">
-                    <h3>Express.js</h3>
+                    <h3>Express</h3>
                     <p>Minimal and flexible Node.js web application framework for APIs.</p>
                     <span class="tech-tag">Backend Framework</span>
                 </article>
@@ -175,15 +165,14 @@
                     <span class="tech-tag">Backend Language</span>
                 </article>
 
-                <article class="skill-card tech-card" data-category="backend">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
-                        alt="Spring" class="tech-icon">
-                    <h3>Spring Boot</h3>
-                    <p>Powerful Java framework for building production-ready enterprise applications.</p>
-                    <span class="tech-tag">Backend Framework</span>
+                <article class="skill-card tech-card" data-category="database">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
+                        class="tech-icon">
+                    <h3>MySQL</h3>
+                    <p>Relational database for structured data, integrity, and performance.</p>
+                    <span class="tech-tag">SQL Database</span>
                 </article>
 
-                <!-- Database -->
                 <article class="skill-card tech-card" data-category="database">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
                         alt="MongoDB" class="tech-icon">
@@ -192,37 +181,11 @@
                     <span class="tech-tag">NoSQL Database</span>
                 </article>
 
-                <article class="skill-card tech-card" data-category="database">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-                        alt="PostgreSQL" class="tech-icon">
-                    <h3>PostgreSQL</h3>
-                    <p>Powerful relational database with advanced features and reliability.</p>
-                    <span class="tech-tag">SQL Database</span>
-                </article>
-
-                <!-- Machine Learning -->
-                <article class="skill-card tech-card" data-category="ml">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                        alt="Python" class="tech-icon">
-                    <h3>Python</h3>
-                    <p>Versatile language powering data science and machine learning workflows.</p>
-                    <span class="tech-tag">ML Language</span>
-                </article>
-
-                <article class="skill-card tech-card" data-category="ml">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
-                        alt="TensorFlow" class="tech-icon">
-                    <h3>TensorFlow</h3>
-                    <p>End-to-end platform for building and deploying machine learning models.</p>
-                    <span class="tech-tag">ML Framework</span>
-                </article>
-
-                <!-- Mobile Development -->
                 <article class="skill-card tech-card" data-category="mobile">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
                         alt="Flutter" class="tech-icon">
                     <h3>Flutter</h3>
-                    <p>Cross-platform mobile framework for building iOS and Android apps.</p>
+                    <p>Cross-platform framework for building high-performance mobile apps.</p>
                     <span class="tech-tag">Mobile Framework</span>
                 </article>
 
@@ -230,13 +193,49 @@
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart"
                         class="tech-icon">
                     <h3>Dart</h3>
-                    <p>Modern programming language powering Flutter mobile development.</p>
+                    <p>Modern language used to build fast and maintainable Flutter apps.</p>
                     <span class="tech-tag">Mobile Language</span>
                 </article>
-            </div>
 
-            <div class="tech-show-more">
-                <button class="btn" type="button">Show More</button>
+                <article class="skill-card tech-card" data-category="tools">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+                        class="tech-icon">
+                    <h3>Git</h3>
+                    <p>Version control for tracking changes and collaborative development.</p>
+                    <span class="tech-tag">Development Tool</span>
+                </article>
+
+                <article class="skill-card tech-card" data-category="tools">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub" class="tech-icon">
+                    <h3>GitHub</h3>
+                    <p>Cloud platform for source code hosting, code review, and CI workflows.</p>
+                    <span class="tech-tag">Collaboration Tool</span>
+                </article>
+
+                <article class="skill-card tech-card" data-category="tools">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                        alt="VS Code" class="tech-icon">
+                    <h3>VS Code</h3>
+                    <p>Lightweight, extensible code editor for modern web and app development.</p>
+                    <span class="tech-tag">IDE / Editor</span>
+                </article>
+
+                <article class="skill-card tech-card" data-category="cp">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"
+                        class="tech-icon">
+                    <h3>C</h3>
+                    <p>Strong foundation for data structures, memory control, and competitive programming.</p>
+                    <span class="tech-tag">CP Language</span>
+                </article>
+
+                <article class="skill-card tech-card" data-category="cp">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                        alt="C++" class="tech-icon">
+                    <h3>C++</h3>
+                    <p>Primary competitive programming language for fast algorithms and STL-based solutions.</p>
+                    <span class="tech-tag">CP Language</span>
+                </article>
             </div>
         </div>
     </section>
@@ -249,47 +248,110 @@
             </div>
 
             <div class="project-grid">
-
-
                 <article class="project-card">
                     <h3>Personal Portfolio Platform</h3>
                     <p class="project-meta">Frontend Experience · 2026</p>
-                    <p class="project-text">Responsive portfolio with a tech ecosystem, projects, achievements and
-                        contact flow.</p>
+                    <p class="project-text">Responsive personal portfolio with strong hero, category-based skills
+                        filtering, projects, achievements and contact flow.</p>
                     <div class="project-tech-stack">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                            alt="HTML5" title="HTML5">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
-                            title="CSS3">
+                            alt="HTML" title="HTML">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
+                            title="CSS">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                             alt="JavaScript" title="JavaScript">
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/MAHMODULHASAN07/mahmoud-dev-portfolio">GitHub</a>
+                        <a class="btn btn-secondary" target="_blank" rel="noopener noreferrer"
+                            href="https://mahmodulhasan07.github.io/mahmoud-dev-portfolio/">Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Message Website (API Based)</h3>
+                    <p class="project-meta">Full-Stack Web App · 2025</p>
+                    <p class="project-text">A messaging platform with REST API integration for posting, fetching and
+                        managing messages with dynamic UI updates.</p>
+                    <div class="project-tech-stack">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML" title="HTML">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
+                            title="CSS">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript" title="JavaScript">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                            alt="Node.js" title="Node.js">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                            alt="Express" title="Express">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                            alt="MongoDB" title="MongoDB">
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/MAHMODULHASAN07/message-website-api">GitHub</a>
+                        <a class="btn btn-secondary" target="_blank" rel="noopener noreferrer"
+                            href="https://mahmodulhasan07.github.io/message-website-api/">Live Demo</a>
                     </div>
                 </article>
 
                 <article class="project-card">
                     <h3>Water Sort Puzzle Game</h3>
                     <p class="project-meta">Desktop Game · 2025</p>
-                    <p class="project-text">Interactive puzzle game with graphical interface for sorting colored water
-                        between bottles.</p>
+                    <p class="project-text">Interactive puzzle game with a Java GUI for sorting colored water into
+                        bottles using logic and optimal move planning.</p>
                     <div class="project-tech-stack">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"
                             title="Java">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                            alt="Java GUI" title="Java Swing/AWT">
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/MAHMODULHASAN07/Water-Sort-Puzzle-Game-java-project">GitHub</a>
+                        <a class="btn btn-secondary" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/MAHMODULHASAN07/water-sort-puzzle-game">Live Demo</a>
                     </div>
                 </article>
+
                 <article class="project-card">
                     <h3>Smart Academic Performance Tracker</h3>
-                    <p class="project-meta">Full‑stack Web App · 2025</p>
-                    <p class="project-text">Dashboard to monitor student progress with analytics, trends and alerts for
-                        under‑performance.</p>
+                    <p class="project-meta">Full-Stack Web App · 2025</p>
+                    <p class="project-text">Dashboard to monitor student progress with analytics, trend insights and
+                        alerting system for under-performance tracking.</p>
                     <div class="project-tech-stack">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                             alt="React" title="React">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
                             alt="Node.js" title="Node.js">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                            alt="Express" title="Express">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
                             alt="MongoDB" title="MongoDB">
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/MAHMODULHASAN07/smart-academic-performance-tracker">GitHub</a>
+                        <a class="btn btn-secondary" target="_blank" rel="noopener noreferrer"
+                            href="https://mahmodulhasan07.github.io/smart-academic-performance-tracker/">Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Flutter To-Do App</h3>
+                    <p class="project-meta">Mobile App · 2025</p>
+                    <p class="project-text">Cross-platform productivity app to manage daily tasks with clean UI, local
+                        persistence and status-based task tracking.</p>
+                    <div class="project-tech-stack">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                            alt="Flutter" title="Flutter">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart"
+                            title="Dart">
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/MAHMODULHASAN07/flutter-todo-app">GitHub</a>
+                        <a class="btn btn-secondary" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/MAHMODULHASAN07/flutter-todo-app">Live Demo</a>
                     </div>
                 </article>
             </div>
@@ -424,7 +486,8 @@
                 <div class="social-links">
                     <h3>Follow Me</h3>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/mahmodul-hasan-35406132b/" target="_blank" rel="noopener" title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/mahmodul-hasan-35406132b/" target="_blank" rel="noopener"
+                            title="LinkedIn">
                             <i class="fa-brands fa-linkedin"></i>
                             <span>LinkedIn</span>
                         </a>
@@ -432,7 +495,8 @@
                             <i class="fa-brands fa-github"></i>
                             <span>GitHub</span>
                         </a>
-                        <a href="https://www.facebook.com/mahmodul.hasan.106273" target="_blank" rel="noopener" title="Facebook">
+                        <a href="https://www.facebook.com/mahmodul.hasan.106273" target="_blank" rel="noopener"
+                            title="Facebook">
                             <i class="fa-brands fa-facebook"></i>
                             <span>Facebook</span>
                         </a>
