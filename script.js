@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const navContactBtn = document.getElementById('nav-contact-btn');
     const techFilters = document.querySelectorAll('#tech-filters .pill');
     const techCards = document.querySelectorAll('.tech-card');
+    const emailServiceId = 'service_wgcrf08';
+    const emailTemplateId = 'template_rj1kfjz';
 
     // Smooth scroll to contact section
     if (contactBtn) {
@@ -20,10 +22,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Handle Form Submission
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            alert('Thank you for your message, Mahmodul! This is a demo; integration with an email service is required for live use.');
-            contactForm.reset();
+
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const nameInput = contactForm.querySelector('input[name="name"]');
+            const emailInput = contactForm.querySelector('input[name="email"]');
+            const messageInput = contactForm.querySelector('textarea[name="message"]');
+
+            if (!window.emailjs) {
+                alert('Email service is not loaded. Please refresh and try again.');
+                return;
+            }
+
+            const templateParams = {
+                from_name: nameInput?.value || '',
+                from_email: emailInput?.value || '',
+                message: messageInput?.value || ''
+            };
+
+            try {
+                if (submitButton) {
+                    submitButton.disabled = true;
+                    submitButton.textContent = 'Sending...';
+                }
+
+                await emailjs.send(emailServiceId, emailTemplateId, templateParams);
+                alert('Message sent successfully!');
+                contactForm.reset();
+            } catch (error) {
+                console.error('EmailJS send failed:', error);
+                alert('Failed to send message. Please try again.');
+            } finally {
+                if (submitButton) {
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Send';
+                }
+            }
         });
     }
 

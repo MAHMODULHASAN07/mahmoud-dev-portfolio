@@ -563,12 +563,14 @@
                     </div>
                 </div>
             </div>
-            <form class="form" id="contact-form">
-                <h2>Send a Message</h2>
+            <form id="contact-form">
                 <input type="text" name="name" placeholder="Your Name" required>
+
                 <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <input class="btn" type="submit" value="Send Message">
+
+                <textarea name="message" placeholder="Your Message"></textarea>
+
+                <button type="submit">Send</button>
             </form>
         </section>
         <div class="footer-bottom">
@@ -576,6 +578,13 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init("bZo0lIqYnSyWcQnvh");
+        })();
+    </script>
     <script src="script.js"></script>
 </body>
 
