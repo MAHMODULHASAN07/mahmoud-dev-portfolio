@@ -48,7 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i><span>Sending...</span>';
                 }
 
-                await emailjs.send(emailServiceId, emailTemplateId, templateParams);
+                const response = await emailjs.send(
+                    emailServiceId, 
+                    emailTemplateId, 
+                    templateParams,
+                    'bZo0lIqYnSyWcQnvh'  // Public key as 4th parameter
+                );
+                console.log('EmailJS Response:', response);
                 alert('Message sent successfully!');
                 contactForm.reset();
             } catch (error) {
