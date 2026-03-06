@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const templateParams = {
-                from_name: nameInput?.value || '',
-                from_email: emailInput?.value || '',
+                name: nameInput?.value || '',
+                email: emailInput?.value || '',
                 message: messageInput?.value || ''
             };
 
