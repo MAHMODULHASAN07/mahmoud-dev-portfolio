@@ -1013,6 +1013,17 @@ footer {
         padding: 48px 16px;
     }
 
+    .tech-filters {
+        justify-content: center;
+        gap: 10px;
+        margin: 16px 0 22px 0;
+    }
+
+    .pill {
+        padding: 7px 14px;
+        font-size: 13px;
+    }
+
     .footer-container {
         grid-template-columns: 1fr;
     }
@@ -1044,6 +1055,19 @@ footer {
     .social-icons a {
         width: 100%;
         justify-content: center;
+    }
+
+    .project-card {
+        padding: 18px 16px;
+    }
+
+    .project-tech-stack {
+        margin-top: 12px;
+        margin-bottom: 4px;
+    }
+
+    .project-actions {
+        margin-top: 10px;
     }
 }
 
@@ -1087,5 +1111,14 @@ footer {
     .contact-item {
         flex-direction: column;
         text-align: center;
+    }
+
+    .tech-filters {
+        justify-content: flex-start;
+    }
+
+    .project-actions .btn {
+        width: 100%;
+        justify-content: center;
     }
 }
