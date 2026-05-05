@@ -11,8 +11,16 @@
         content="Mahmodul Hasan, Full Stack Developer, Flutter Developer, Web Developer, Portfolio, JavaScript, Node.js, React, Mobile App Developer">
     <meta name="author" content="Mahmodul Hasan">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#FD6E0A">
+    <meta name="theme-color" content="#FD6E0A" id="theme-color-meta">
     <link rel="canonical" href="https://mahmodulhasan07.github.io/mahmoud-dev-portfolio/">
+
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('portfolio-theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        }());
+    </script>
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Mahmodul Hasan | Full Stack Developer Portfolio">
@@ -87,6 +95,8 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#achievements">Achievements</a></li>
                 <li><button class="btn" id="nav-contact-btn">Let's Talk</button></li>
+                <li><button class="btn btn-secondary theme-toggle" id="theme-toggle" type="button"><i
+                            class="fa-solid fa-moon"></i><span>Dark mode</span></button></li>
             </ul>
         </nav>
 

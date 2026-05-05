@@ -990,6 +990,157 @@ footer {
     font-size: 14px;
 }
 
+.theme-toggle {
+    gap: 10px;
+}
+
+.theme-toggle i {
+    font-size: 14px;
+}
+
+html[data-theme='dark'] body,
+html[data-theme='dark'] .font-open-sans {
+    color: #e5e7eb;
+    background-color: #0f172a;
+}
+
+html[data-theme='dark'] header {
+    background: linear-gradient(135deg, #0f172a 0%, #111827 50%, #1e293b 100%);
+}
+
+html[data-theme='dark'] .section-heading h2,
+html[data-theme='dark'] .section-heading-center h2,
+html[data-theme='dark'] .logo h2,
+html[data-theme='dark'] .banner-content h1,
+html[data-theme='dark'] .banner-content h2,
+html[data-theme='dark'] .about-text h3,
+html[data-theme='dark'] .highlight-item h4,
+html[data-theme='dark'] .tech-card h3,
+html[data-theme='dark'] .project-card h3,
+html[data-theme='dark'] .achievement-card h3,
+html[data-theme='dark'] .resume-item h3,
+html[data-theme='dark'] .skills-group-title,
+html[data-theme='dark'] .skill-category-card h3,
+html[data-theme='dark'] .footer-container h2,
+html[data-theme='dark'] .footer-container form h2,
+html[data-theme='dark'] .social-links h3 {
+    color: #e5e7eb;
+}
+
+html[data-theme='dark'] .section-heading p,
+html[data-theme='dark'] .section-heading-center p,
+html[data-theme='dark'] .menu a,
+html[data-theme='dark'] .banner-content p,
+html[data-theme='dark'] .chip-text,
+html[data-theme='dark'] .about-text p,
+html[data-theme='dark'] .highlight-item p,
+html[data-theme='dark'] .tech-card p,
+html[data-theme='dark'] .project-text,
+html[data-theme='dark'] .achievement-text,
+html[data-theme='dark'] .resume-text,
+html[data-theme='dark'] .project-tags li,
+html[data-theme='dark'] .category-skill-list li,
+html[data-theme='dark'] .footer-container p,
+html[data-theme='dark'] .footer-bottom p,
+html[data-theme='dark'] .contact-details h4,
+html[data-theme='dark'] .pill {
+    color: #cbd5e1;
+}
+
+html[data-theme='dark'] .pill,
+html[data-theme='dark'] .tech-card,
+html[data-theme='dark'] .skill-category-card,
+html[data-theme='dark'] .project-card,
+html[data-theme='dark'] .achievement-card,
+html[data-theme='dark'] .resume-item {
+    background: #111827;
+    border-color: #334155;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+
+html[data-theme='dark'] .pill:hover,
+html[data-theme='dark'] .category-skill-list li,
+html[data-theme='dark'] .project-tags li,
+html[data-theme='dark'] .banner-chip {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+html[data-theme='dark'] .pill.active {
+    background: linear-gradient(135deg, #FD6E0A, #ff8c3a);
+    border-color: transparent;
+    color: #ffffff;
+}
+
+html[data-theme='dark'] .about-section,
+html[data-theme='dark'] #projects,
+html[data-theme='dark'] #resume {
+    background: #111827;
+}
+
+html[data-theme='dark'] #skills.tech-ecosystem,
+html[data-theme='dark'] #achievements {
+    background: linear-gradient(135deg, #0f172a 0%, #111827 50%, #1e293b 100%);
+}
+
+html[data-theme='dark'] .banner-chip,
+html[data-theme='dark'] .highlight-item,
+html[data-theme='dark'] .contact-item,
+html[data-theme='dark'] .footer-container .form,
+html[data-theme='dark'] .footer-bottom {
+    background: rgba(15, 23, 42, 0.75);
+    border-color: #334155;
+}
+
+html[data-theme='dark'] .menu a:hover::after,
+html[data-theme='dark'] .highlight-item:hover,
+html[data-theme='dark'] .tech-card:hover,
+html[data-theme='dark'] .project-card:hover,
+html[data-theme='dark'] .achievement-card:hover,
+html[data-theme='dark'] .resume-item:hover,
+html[data-theme='dark'] .contact-item:hover,
+html[data-theme='dark'] .social-icons a:hover {
+    border-color: #FD6E0A;
+}
+
+html[data-theme='dark'] .banner-content p,
+html[data-theme='dark'] .about-text p,
+html[data-theme='dark'] .tech-card p,
+html[data-theme='dark'] .project-text,
+html[data-theme='dark'] .achievement-text,
+html[data-theme='dark'] .resume-text,
+html[data-theme='dark'] .footer-container p,
+html[data-theme='dark'] .footer-bottom p {
+    color: #cbd5e1;
+}
+
+html[data-theme='dark'] .footer-container form input,
+html[data-theme='dark'] .footer-container form textarea {
+    background: #0f172a;
+    border-color: #334155;
+    color: #e5e7eb;
+}
+
+html[data-theme='dark'] .footer-container form input::placeholder,
+html[data-theme='dark'] .footer-container form textarea::placeholder {
+    color: #94a3b8;
+}
+
+html[data-theme='dark'] .footer-container form .btn,
+html[data-theme='dark'] .btn {
+    box-shadow: 0 8px 18px rgba(253, 110, 10, 0.22);
+}
+
+html[data-theme='dark'] .theme-toggle {
+    background: transparent;
+    color: #FD6E0A;
+    border-color: #FD6E0A;
+}
+
+html[data-theme='dark'] .theme-toggle:hover {
+    background: rgba(253, 110, 10, 0.12);
+}
+
 /* Responsive */
 @media (max-width: 900px) {
     #banner {
